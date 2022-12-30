@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import {
-    View,
-		ViewPropTypes,
-    StyleSheet,
-    Text,
-	TouchableOpacity
-} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import PropTypes from 'prop-types';
+import { View } from 'react-native';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+import propTypes from 'prop-types';
+
 import MultiToggleSwitchItem from './MultiToggleSwitchItem';
 
 
@@ -105,12 +100,12 @@ MultiToggleSwitch.defaultProps = {
 }
 
 MultiToggleSwitch.propTypes = {
-	defaultActiveIndex: PropTypes.number,
-	primaryColor: PropTypes.string,
-	secondaryColor: PropTypes.string,
+	defaultActiveIndex: propTypes.number,
+	primaryColor: propTypes.string,
+	secondaryColor: propTypes.string,
 	itemContainer: ViewPropTypes.style,
 	activeContainerStyle: ViewPropTypes.style,
 	itemsContainer: ViewPropTypes.style,
 	itemsContainerBackgroundStyle: ViewPropTypes.style,
-	onPress: PropTypes.func,
+	onPress: propTypes.func,
 }

@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import {
-    ViewPropTypes,
-    StyleSheet,
-    Text,
-	TouchableOpacity,
-} from 'react-native';
-import PropTypes from 'prop-types';
-
+import { TouchableOpacity } from 'react-native';
+import propTypes from 'prop-types';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 export default class MultiToggleSwitchItem extends Component {
     constructor(props) {
@@ -36,11 +31,11 @@ MultiToggleSwitchItem.defaultProps = {
 }
 
 MultiToggleSwitchItem.propTypes = {
-	active: PropTypes.bool,
-	iconName: PropTypes.string,
-	primaryColor: PropTypes.string,
-	secondaryColor: PropTypes.string,
+	active: propTypes.bool,
+	iconName: propTypes.string,
+	primaryColor: propTypes.string,
+	secondaryColor: propTypes.string,
 	itemContainer: ViewPropTypes.style,
 	activeContainerStyle: ViewPropTypes.style,
-	onPress: PropTypes.func,
+	onPress: propTypes.func,
 }

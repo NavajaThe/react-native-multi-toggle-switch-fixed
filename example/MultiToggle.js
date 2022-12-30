@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  View
-} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import MultiToggleSwitch from 'react-native-multi-toggle-switch';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
