@@ -56,7 +56,7 @@ npm i react-native-multi-toggle-switch-fixed
 
 ```
 
-import MultiToggleSwitch from 'react-native-multi-toggle-switch';
+import MultiToggleSwitch from 'react-native-multi-toggle-switch-fixed';
 
 ```
 
