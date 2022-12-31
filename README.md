@@ -68,33 +68,21 @@ import MultiToggleSwitch from 'react-native-multi-toggle-switch';
 
 ```
 
-<MultiToggleSwitch>
+    <MultiToggleSwitch defaultActiveIndex = {1}> 
 
-<MultiToggleSwitch.Item onPress={() => console.log("Facebook tapped!")}>
+        <MultiToggleSwitch.Item primaryColor={'darkgray'} onPress={() => alert('iOS')}>
+            <Ionicons name={'logo-apple'} size={30} />
+        </MultiToggleSwitch.Item>
 
-<Icon name={'facebook'} size={30} />
+        <MultiToggleSwitch.Item primaryColor={'#f7df1e'} onPress={() => alert('Web')}>
+            <Ionicons name={'laptop-outline'} size={30} />   
+        </MultiToggleSwitch.Item>
+            
+        <MultiToggleSwitch.Item primaryColor={'#a4c639'} onPress={() => alert('Android')}>
+            <Ionicons name={'logo-android'} size={30} />
+        </MultiToggleSwitch.Item> 
 
-</MultiToggleSwitch.Item>
-
-<MultiToggleSwitch.Item primaryColor={'#CF4647'}>
-
-<Icon name={'twitter'} size={30} />
-
-</MultiToggleSwitch.Item>
-
-<MultiToggleSwitch.Item>
-
-<Icon name={'instagram'} size={30}/>
-
-</MultiToggleSwitch.Item>
-
-<MultiToggleSwitch.Item primaryColor={'orange'}>
-
-<Icon name={'github'} size={30} />
-
-</MultiToggleSwitch.Item>
-
-</MultiToggleSwitch>
+    </MultiToggleSwitch>
 
 ```
 
