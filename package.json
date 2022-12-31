@@ -1,6 +1,6 @@
 {
-  "name": "react-native-multi-toggle-switch",
-  "version": "2.0.0",
+  "name": "react-native-multi-toggle-switch-fixed",
+  "version": "2.0.2",
   "description": "Customizable Multi Toggle Switch Component for React-Native",
   "main": "index.js",
   "scripts": {
@@ -8,18 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kiok46/react-native-multi-toggle-switch.git"
+    "url": "git+https://github.com/NavajaThe/react-native-multi-toggle-switch-fixed.git"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "multi-toggle-switch",
+    "toggle switch"
   ],
-  "author": "Kuldeep Singh (kiok46)",
+  "author": "Habba (NavajaThe)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kiok46/react-native-multi-toggle-switch/issues"
+    "url": "https://github.com/NavajaThe/react-native-multi-toggle-switch-fixed/issues"
   },
-  "homepage": "https://github.com/kiok46/react-native-multi-toggle-switch#readme",
-  "devDependencies": {
+  "homepage": "https://github.com/NavajaThe/react-native-multi-toggle-switch-fixed",
+  "dependencies": {
     "deprecated-react-native-prop-types": "^2.3.0",
     "prop-types": "^15.8.1"
   }

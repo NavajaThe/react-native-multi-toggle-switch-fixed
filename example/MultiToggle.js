@@ -1,36 +1,51 @@
-import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
-import MultiToggleSwitch from 'react-native-multi-toggle-switch';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { View, StyleSheet, ImageBackground } from 'react-native';
 
+import MultiToggleSwitch from 'react-native-multi-toggle-switch-fixed';
+import Ionicons from 'react-native-vector-icons/Ionicons'
 
-export default class MultiToggle extends Component {
-  render() {
+export default function App() {
+  
+  const Vista = (
+    <ImageBackground
+        style={styles.background}
+        source={require('./assets/forest_wallpaper.jpg')}
+        >
 
-    return (
-      <View style={styles.container}>
-	    <MultiToggleSwitch>
-		  <MultiToggleSwitch.Item onPress={() => console.log("Facebook tapped!")}>
-              <Icon name={'facebook'} size={30} />
+      <View style={styles.multiSwitchContainer}>
+      
+        <MultiToggleSwitch defaultActiveIndex = {1}> 
+
+          <MultiToggleSwitch.Item primaryColor={'darkgray'} onPress={() => alert('iOS')}>
+            <Ionicons name={'logo-apple'} size={30} />
           </MultiToggleSwitch.Item>
-		  <MultiToggleSwitch.Item primaryColor={'#CF4647'}>
-              <Icon name={'twitter'} size={30} />
+
+          <MultiToggleSwitch.Item primaryColor={'#f7df1e'} onPress={() => alert('Web')}>
+            <Ionicons name={'laptop-outline'} size={30} />   
           </MultiToggleSwitch.Item>
-          <MultiToggleSwitch.Item primaryColor={'orange'}>
-              <Icon name={'github'} size={30} />
-          </MultiToggleSwitch.Item>
-		</MultiToggleSwitch>
+              
+          <MultiToggleSwitch.Item primaryColor={'#a4c639'} onPress={() => alert('Android')}>
+            <Ionicons name={'logo-android'} size={30} />
+          </MultiToggleSwitch.Item> 
+
+        </MultiToggleSwitch>
+                          
       </View>
-    );
-  }
+    </ImageBackground>
+  );
+  
+  return Vista;
+
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#888',
-  },
 
+   background:{
+        flex: 1,
+        justifyContent: 'center',
+    },
+    
+   multiSwitchContainer:{
+        alignSelf:'center',
+    },
+  
 });

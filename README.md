@@ -1,25 +1,26 @@
-# react-native-multi-toggle-switch
-MultiToggle Switch for React-Native
+# react-native-multi-toggle-switch-fixed
+MultiToggle Switch for React-Native, Expo Compatible (Web, Android, iOS)
 
+### Disclaimer
+Original Autor kiok46, It was no longer being maintained so i gave it a refresh
+```
+https://github.com/kiok46/react-native-multi-toggle-switch
+```
 
-<img src="https://user-images.githubusercontent.com/7335120/31056186-631985f0-a6eb-11e7-9436-08cb48804036.gif" width="350">
-<img src="https://user-images.githubusercontent.com/7335120/31056187-6414462a-a6eb-11e7-93ef-7420275b33d6.gif" width="350">
-<img src="https://user-images.githubusercontent.com/7335120/31057446-499b8514-a700-11e7-86b8-1dd462f9eda4.gif" width="350">
+### Try it
+```
+https://snack.expo.dev/@navajathe/react-native-multi-toggle-switch-fixed
+```
+
+### Android and iOS Demo
+<img src="https://media1.tenor.com/images/f523b1706284212538ffc67ce1ed76e0/tenor.gif" width="350">
+<img src="https://media1.tenor.com/images/c541e956595562d3d60f5ef7ea4f5006/tenor.gif" width="350">
 
 
 ### Installation
 ```
-npm i react-native-multi-toggle-switch --save
+npm i react-native-multi-toggle-switch-fixed
 ```
-Link `react-native-vector-icons` native dependencies to your project with:
-```
-react-native link react-native-vector-icons
-```
-or just:
-```
-react-native link
-```
-
 
 ## Usage
 
@@ -67,5 +68,5 @@ import MultiToggleSwitch from 'react-native-multi-toggle-switch';
 
 ## TODO
 
-- [x] Example
-- [x] Able to use all icons(only FontAwesome Supported)
+- [x] Make it usable again
+
